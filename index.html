@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#090d18"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Sade İzle">
+<meta name="description" content="Mini dizileri kolayca aramak ve izleme sayfalarına ulaşmak için sade mobil arayüz.">
+<title>Sade İzle — Mobil</title>
+<style>
+:root{color-scheme:dark;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#090d18;color:#f0f4ff}
+*{box-sizing:border-box}body{margin:0;min-height:100dvh;background:radial-gradient(circle at top,#202a46,#090d18 60%)}main{max-width:620px;margin:0 auto;padding:calc(env(safe-area-inset-top) + 23px) 20px calc(env(safe-area-inset-bottom) + 30px)}header{display:flex;align-items:center;gap:12px;margin-bottom:32px}.logo{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,#35c7ab,#4384f9);display:grid;place-items:center;color:#05141b;font-size:23px;font-weight:900}h1{font-size:23px;margin:0;letter-spacing:-.6px}small,.muted{color:#9daabe}header small{font-size:12px}h2{font-size:23px;line-height:1.25;margin:4px 0 12px}p{line-height:1.55;color:#b7c1d2}.card{background:#151d30;border:1px solid #2b3750;border-radius:21px;padding:21px;margin:20px 0;box-shadow:0 15px 32px #0002}label{display:block;font-size:13px;font-weight:600;color:#d8e3f5;margin-bottom:10px}input{width:100%;background:#080e1b;border:1px solid #41506b;border-radius:13px;color:#fff;font-size:16px;min-height:52px;padding:14px;outline:0}input:focus{border-color:#35c7ab;box-shadow:0 0 0 3px #35c7ab22}button,.btn{display:flex;width:100%;align-items:center;justify-content:center;min-height:51px;border:0;border-radius:13px;background:#42cfb1;color:#091b23;font-size:16px;font-weight:750;margin-top:13px;cursor:pointer;text-decoration:none;text-align:center;padding:12px}.secondary{background:#26334b;color:#eaf0ff}.hint{font-size:12px;color:#98a7bc;margin-top:11px}.eyebrow{color:#5de5c5;font-weight:700;font-size:12px;letter-spacing:1.5px;text-transform:uppercase}.linkrow{display:flex;align-items:center;gap:12px;text-decoration:none;color:#eaf1ff;background:#192238;border:1px solid #32405a;padding:14px;border-radius:14px;margin:11px 0;min-height:65px}.linkrow b{display:block;font-size:14px}.linkrow span{font-size:12px;color:#a3b1c4}a:focus-visible,button:focus-visible{outline:3px solid #78f4db;outline-offset:3px}.note{border-left:3px solid #45c6aa;padding:8px 13px;background:#101b2a;border-radius:0 8px 8px 0;font-size:13px;color:#b6c3d6}footer{font-size:12px;color:#8190a8;margin-top:30px;line-height:1.6}.chip{font-size:12px;padding:6px 10px;border-radius:20px;background:#24334b;color:#aee6db;display:inline-block;margin-bottom:14px}
+</style>
+</head>
+<body><main>
+<header><div class="logo" aria-hidden="true">▶</div><div><h1>Sade İzle</h1><small>iPhone için sade dizi erişimi</small></div></header>
+<div class="eyebrow">MINI DIZI • MOBIL</div><h2>Aradığın diziyi bul, izlemeye geç.</h2>
+<p>Karmaşık menüler olmadan dizi arama sayfasına git veya kaldığın diziyi aç.</p>
+<section class="card" aria-label="Dizi arama"><label for="search">Dizi adı</label><form id="searchForm"><input id="search" type="search" placeholder="Örn. Yeraltı Kralı'nın Dönüşü" enterkeyhint="search" autocomplete="off" required maxlength="150"><button type="submit">Dizi ara →</button></form><div class="hint">Arama, Narto Drama'nın Türkçe sayfasında açılır.</div></section>
+<section><div class="chip">Hızlı erişim</div><a class="linkrow" id="featured" href="https://edge.narto-drama.com/detail/watch/yeralti-krali-nin-donusu-dublajli" rel="noopener noreferrer"><div style="font-size:27px">🎬</div><div><b>Yeraltı Kralı'nın Dönüşü (Dublajlı)</b><span>İzleme sayfasını aç ↗</span></div></a><a class="linkrow" href="https://edge.narto-drama.com/?lang=tr-TR" rel="noopener noreferrer"><div style="font-size:27px">🔎</div><div><b>Tüm dizilere göz at</b><span>Türkçe kaynak siteyi aç ↗</span></div></a></section>
+<section class="card"><label for="direct">Elinde başka bir dizi bağlantısı mı var?</label><input id="direct" type="url" inputmode="url" placeholder="https://edge.narto-drama.com/..." spellcheck="false"><button class="secondary" id="openLink" type="button">Dizi bağlantısını aç ↗</button><div class="hint" id="message" role="status" aria-live="polite">Güvenlik için yalnızca edge.narto-drama.com bağlantıları açılır.</div></section>
+<p class="note"><strong>Bilgi:</strong> Bu uygulama videoları barındırmaz veya indirmez. Videolar kaynak sitenin kendi sayfasında açılır. Kaynak sitenin reklamları, yönlendirmeleri ve oynatma kısıtları bu uygulama tarafından kaldırılamaz.</p>
+<footer>Bağımsız kişisel erişim arayüzü • Narto Drama ile bağlantılı veya onun tarafından onaylı değildir. Safari'de Paylaş → Ana Ekrana Ekle seçeneğiyle kısayol oluşturabilirsin.</footer>
+</main>
+<script>
+const home='https://edge.narto-drama.com/';
+document.getElementById('searchForm').addEventListener('submit',e=>{e.preventDefault();const q=document.getElementById('search').value.trim();if(!q)return;location.assign(home+'?lang=tr-TR&q='+encodeURIComponent(q));});
+document.getElementById('openLink').addEventListener('click',()=>{const msg=document.getElementById('message');try{const u=new URL(document.getElementById('direct').value.trim());if(u.protocol!=='https:'||u.hostname!=='edge.narto-drama.com'){throw Error('invalid')}location.assign(u.href)}catch{msg.textContent='Lütfen edge.narto-drama.com adresinden geçerli bir HTTPS bağlantısı yapıştır.';}});
+</script>
+</body></html>
